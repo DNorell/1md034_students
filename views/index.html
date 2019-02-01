@@ -1,10 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>DELI-VERY</title>
-    </head>
-    <body>
-        <h1>Hello World!!!</h1>
-        <a href="/map" target="_blank">Open map in new window</a>.
-    </body>
+  <head>
+    <title>BurgerOnline</title>
+    <meta charset="utf-8"/>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Välkommen till BurgerOnline</h1>
+      <img src="https://pixabay.com/get/eb37b60b2cf5003ed1584d05fb0938c9bd22ffd41cb3114991f7c17ca4/sliders-2274411_1280.jpg" alt="Headerbild på burgare" title="Välkommen till BurgerOnline">
+    </header>
+    <main>
+      <section id="burgare">
+        <h3>Välj burgare</h3>
+        <p>Här genomför du val av burgare</p>
+        <div class="wrapper">
+          <div class="burgare a">
+            <h4>Klassiker</h4>
+            <img src="https://cdn.pixabay.com/photo/2017/11/16/05/50/classic-burger-2953387_640.jpg" alt="Bild på burgaren Klassiker" title="Klassiker" width="150">
+            <ul>
+              <li>Svenskt nötkött</li>
+              <li>Cheddarost (innehåller <span class="allergi">laktos</span>)</li>
+              <li>Gyllenbrunt bröd (innehåller <span class="allergi">gluten</span> och <span class="allergi">sesamfrön</span>)</li>
+            </ul>
+          </div>
+          <div class="burgare b">
+            <h4>Söderns hetta</h4>
+            <img src="http://goldcoastdogs.net/wp-content/uploads/2015/05/chilli-burger-edited-1024x987.jpg" alt="Bild på burgaren Söderns hetta" title="Söderns hetta" width="150">
+            <ul>
+              <li>Svenskt nötkött</li>
+              <li>Cheddarost (innehåller <span class="allergi">laktos</span>)</li>
+              <li>Gyllenbrunt bröd (innehåller <span class="allergi">gluten</span>)</li>
+              <li>Röd chilli (stark)</li>
+            </ul>
+          </div>
+          <div class="burgare c">
+            <h4>Veggo</h4>
+            <img src="http://goldcoastdogs.net/wp-content/uploads/2015/05/Veggie-burger-edited-1024x678.jpg" alt="Bild på burgaren Veggo" title="Veggo" width="150">
+            <ul>
+              <li>Grönsaksbiff (innehåller <span class="allergi">selleri</span>)</li>
+              <li>Gyllenbrunt bröd (glutenfritt)</li>
+              <li>Vegansk</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="kundinfo">
+        <h3>Kundinformation</h3>
+        <p>Här tillhandahåller du nödvänding information</p>
+        <form>
+          <h4>Leveransinformation:</h4>
+          <p>
+            <label for="namn">Fullständigt namn</label><br>
+            <input type="text" id="namn" name="namn" required="required" placeholder="För- och efternamn">
+          </p>
+          <p>
+            <label for="e-post">E-post</label><br>
+            <input type="email" id="e-post" name="e-post" required="required" placeholder="E-postadress">
+          </p>
+          <p>
+            <label for="gata">Gata</label><br>
+            <input type="text" id="gata" name="gata" required="required" placeholder="Gatunamn">
+          </p>
+          <p>
+            <label for="hus">Hus</label><br>
+            <input type="number" min="0" id="hus" name="hus" required="required" placeholder="Husnummer">
+          </p>
+          <p>
+            <label for="betalsätt">Betalsätt</label><br>
+            <select id="betalsätt" name="betalsätt">
+              <option>Banköverföring</option>
+              <option>Faktura</option>
+              <option selected="selected">Kort</option>
+              <option>Kredit</option>
+              <option>Swish</option>
+            </select>
+          </p>
+          <p>
+            Kön<br>
+            <label><input type="radio" name="kön" value="man">Man</label><br>
+            <label><input type="radio" name="kön" value="kvinna">Kvinna</label><br>
+            <label><input type="radio" name="kön" value="okänt" checked="checked">Vill ej uppge</label>
+          </p>
+        </form>
+      </section>
+      <button type="submit"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Approve_icon.svg" width="12"> Skicka beställning</button>
+    </main>
+    <hr>
+    <footer>
+      <p>&copy; 2018 BurgerOnline AB</p>
+    </footer>
+  </body>
 </html>
